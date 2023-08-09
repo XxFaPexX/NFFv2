@@ -1,0 +1,57 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  color: black;
+}
+
+ul {
+  width: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: large;
+}
+
+  li::before {
+  content: ""; 
+  background-color:rgb(255, 255, 255) ;
+  position: absolute;
+  left: 0; 
+  bottom: -0.3rem;
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+  content: "";
+  background-color:rgb(255, 255, 255) ;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 100%;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}  
